@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.navbar {
+    background: #4409e6;
+    background: linear-gradient(90deg, rgba(68, 9, 230, 1) 0%, rgba(87, 156, 199, 1) 50%, rgba(222, 83, 237, 1) 100%);
+}
