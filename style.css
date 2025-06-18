@@ -4,10 +4,153 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Special Elite";
+}
+
+body {
+
+    background-image: url(/assets/background.PNG);
+    background-size: 100vw;
 
 }
 
+
+@media screen and (max-width: 1250px) {
+
+    .disponivel {
+        padding: 2rem 1rem; /* padding menor e mais proporcional */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    }
+
+    .text-center {
+        font-size: 18px;
+        color: whitesmoke;
+        background-color: rgb(23, 23, 23);
+    }
+
+    .requiem {
+        width: 80vw;        /* usa largura relativa à viewport */
+    max-width: 500px;   /* limita a largura máxima */
+    height: auto;
+    display: block;
+    margin: 0 auto;     /* centraliza horizontalmente */
+
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+    .cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* Centraliza verticalmente se houver altura definida */
+        align-items: center;
+        /* Este aqui centraliza os .card horizontalmente */
+    }
+
+    .card {
+        width: 90vw;
+        /* menor que 100vw para mostrar que está centralizado */
+    }
+}
+
+
+
+
+
+
 .navbar {
-    background: #4409e6;
-    background: linear-gradient(90deg, rgba(68, 9, 230, 1) 0%, rgba(87, 156, 199, 1) 50%, rgba(222, 83, 237, 1) 100%);
+
+    font-size: 30px;
+    height: 80px;
+    background: #420a0e;
+    background: linear-gradient(90deg, rgba(66, 10, 14, 1) 0%, rgba(163, 36, 66, 1) 50%, rgba(43, 10, 13, 1) 100%);
+}
+
+
+.nav-link {
+    font-size: 200px;
+}
+
+.relogo {
+    width: 200px;
+
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 100px;
+}
+
+.card {
+    border-radius: 30px;
+    width: 40rem;
+}
+
+.card-body {
+    font-size: 25px;
+}
+
+.cards .card {
+    width: 80vw
+}
+
+.datainfo {
+    margin-top: 30px;
+    font-size: 24px;
+    color: whitesmoke;
+
+}
+
+.disponivel {
+    padding: 200px;
+    text-align: center;
+}
+
+
+
+.text-center {
+    font-size: 18px;
+    color: whitesmoke;
+    background-color: rgb(23, 23, 23);
+}
+
+.carousel-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-item::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #0f0f0f 100%);
+    pointer-events: none;
+}
+
+.carousel-caption {
+    margin-bottom: 80px;
+}
+
+.navbar-nav {
+
+    gap: 100px;
+    text-transform: uppercase;
+    transition: 1s;
+    margin-left: auto;
+    padding-right: 40px;
+}
+
+.navbar-nav .nav-link {
+    color: whitesmoke !important;
 }
