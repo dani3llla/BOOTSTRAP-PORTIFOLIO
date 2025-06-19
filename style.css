@@ -61,6 +61,23 @@ body {
 
 
 
+@media screen and (max-width: 768px) {
+    .disponivel {
+        align-items: center;
+    }
+
+    
+    .requiem {
+        text-align: center;
+    height: auto;
+    display: block;
+    margin: 0 auto;     /* centraliza horizontalmente */
+
+    }
+}
+
+
+
 
 
 
@@ -85,14 +102,21 @@ body {
 .cards {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 50px;
     padding: 100px;
+    
 }
 
 .card {
     border-radius: 30px;
     width: 40rem;
+    transition: transform 0.3s ease;
 }
+
+.card:hover {
+  transform: scale(1.10); /* aumenta levemente o card */
+}
+
 
 .card-body {
     font-size: 25px;
